@@ -1,0 +1,50 @@
+name: AI News Daily Intel Pipeline
+
+on:
+  schedule:
+    # 01:00 UTC = 18:00 PDT / 17:00 PST (End of US business day)
+    - cron: '0 1 * * *'
+  workflow_dispatch: # Allows manual trigger from the Actions tab
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python Environment
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          
+      - name: Install Architecture Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install feedparser supabase google-generativeai requests
+          
+      - name: Reconstruct Secure Config
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+        run: |
+          # The system config.py is regenerated natively via GH Secrets preventing public exposure.
+          echo "GEMINI_API_KEY = '${GEMINI_API_KEY}'" > config.py
+          echo "MODEL_NAME = 'gemini-2.5-flash'" >> config.py
+          echo "SUPABASE_URL = '${SUPABASE_URL}'" >> config.py
+          echo "SUPABASE_KEY = '${SUPABASE_KEY}'" >> config.py
+
+      - name: Execute Autonomous Multi-Agent Pipeline
+        run: |
+          # Runs Scout -> Analyst -> Writer -> Publisher exactly like local execution.
+          python main.py
+
+      - name: Commit Intelligence State to Repository
+        run: |
+          # Preserves the AI's Temporal Memory (insights.json) for tomorrow's run.
+          git config --global user.name "AI Pipeline Automation"
+          git config --global user.email "actions@github.com"
+          git add data/processed/
+          git commit -m "Automated Intelligence Snapshot [$(date +'%Y-%m-%d')]" || echo "No changes to commit"
+          git push

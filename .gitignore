@@ -1,0 +1,48 @@
+# Python / Pipeline Envs
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Environment / Secrets (CRITICAL)
+config.py
+.env
+.env.local
+*.env
+
+# Next.js Frontend
+frontend/.next/
+frontend/node_modules/
+frontend/out/
+frontend/build/
+frontend/.vercel/
+
+# Mockups / Scratch Files
+*.png
+*.jpg
+scratch/
+
+# Local Data Cache Execution
+# We ignore the massive raw scrape dumps, but explicitly DO NOT ignore the `processed` dir
+# because the GitHub Actions runner needs to commit insights.json back to the repo 
+# daily to preserve the AI's 'Temporal Memory' across ephemeral runs.
+data/raw/
