@@ -1,30 +1,8 @@
 {
   "date": "2026-04-19",
-  "total_input_articles": 8,
-  "total_after_filter": 6,
+  "total_input_articles": 2,
+  "total_after_filter": 2,
   "themes": [
-    {
-      "name": "AI Products & Features",
-      "description": "Companies are actively launching and deploying specialized AI-powered tools and agents for practical business applications, ranging from creative design to customer service automation.",
-      "why_it_matters": "This trend signifies the maturation of AI applications, moving beyond general-purpose models to deliver tangible value and efficiency in diverse sectors, while also highlighting the growing importance of secure and autonomous agentic workflows.",
-      "developments": [
-        "Anthropic: launched Claude Design \u2192 enables users to create visual work and prototypes via conversational prompts, challenging existing design tools.",
-        "Dairy Queen: deploying AI chatbot in drive-thrus \u2192 aims to speed up service and increase order size in fast food operations.",
-        "NVIDIA: introduced OpenClaw and NemoClaw \u2192 facilitates building secure, always-on local AI agents for multi-step workflows."
-      ],
-      "confidence": "medium",
-      "trend": "growing"
-    },
-    {
-      "name": "AI Infrastructure & Hardware",
-      "description": "There is a continued focus on optimizing AI compute resources, particularly for inference, to manage costs and improve efficiency in real-world applications.",
-      "why_it_matters": "Efficient compute is crucial for scaling AI applications and managing operational costs, especially as real-world deployments increase inference demands and require more sophisticated resource allocation strategies.",
-      "developments": [
-        "LLM Developers: optimizing end-to-end AI compute budget for inference \u2192 addresses the challenge of high inference costs in real-world AI applications."
-      ],
-      "confidence": "low",
-      "trend": "stable"
-    },
     {
       "name": "AI Business & Strategy",
       "description": "Specialized AI hardware companies are seeking public funding, signaling market maturity and growing investor confidence in foundational AI technologies.",
@@ -43,7 +21,7 @@
         "Anthropic: updated Claude Opus system prompt (4.6 to 4.7) \u2192 reflects ongoing model evolution and refinement by major AI labs."
       ],
       "confidence": "low",
-      "trend": "emerging"
+      "trend": "stable"
     }
   ],
   "top_insights": [
@@ -53,28 +31,16 @@
   ],
   "signal_vs_noise": {
     "strong_signal": [
-      "Anthropic just launched Claude Design, an AI tool that turns prompts into prototypes and challenges Figma",
       "AI chip startup Cerebras files for IPO",
-      "Train-to-Test scaling explained: How to optimize your end-to-end AI compute budget for inference",
-      "Dairy Queen is putting an AI chatbot in its drive-thrus",
-      "Changes in the system prompt between Claude Opus 4.6 and 4.7",
-      "Build a More Secure, Always-On Local AI Agent with OpenClaw and NVIDIA NemoClaw"
+      "Changes in the system prompt between Claude Opus 4.6 and 4.7"
     ],
-    "weak_signal": [
-      "Tokenmaxxing, OpenAI\u2019s shopping spree, and the AI Anxiety Gap",
-      "Full-Stack Optimizations for Agentic Inference with NVIDIA Dynamo"
-    ]
+    "weak_signal": []
   },
   "temporal_analysis": {
-    "new_signals": [
-      "Model Releases & Capabilities (specifically, the evolution of system prompts for major models)"
-    ],
+    "new_signals": [],
     "decayed_signals": [
-      "Regulation & Risk (unconfirmed)",
-      "OpenAI acquires AI personal finance startup Hiro (unconfirmed)",
-      "Anthropic Claude Opus 4.6 and Claude Code reportedly experiencing performance degradation (unconfirmed)",
-      "Cloudflare/OpenAI integrate GPT-5.4 and Codex into Cloudflare Agent Cloud (unconfirmed)",
-      "On-device AI inference creates CISO blind spots (unconfirmed)"
+      "AI Products & Features (unconfirmed)",
+      "AI Infrastructure & Hardware (unconfirmed)"
     ]
   }
 }
