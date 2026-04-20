@@ -1,22 +1,16 @@
 {
-<<<<<<< Updated upstream
   "date": "2026-04-19",
   "total_input_articles": 2,
   "total_after_filter": 2,
-=======
-  "date": "2026-04-20",
-  "total_input_articles": 8,
-  "total_after_filter": 6,
->>>>>>> Stashed changes
   "themes": [
     {
       "name": "AI Business & Strategy",
       "description": "Specialized AI hardware companies are seeking public funding, signaling market maturity and growing investor confidence in foundational AI technologies.",
       "why_it_matters": "The IPO of an AI chip startup indicates increasing investor interest and demand for specialized hardware, which is critical for supporting the expanding AI ecosystem and its compute-intensive requirements.",
       "developments": [
-        "Cerebras: filed for IPO \u2192 indicates growing investor interest and market maturity for specialized AI chip companies."
+        "Cerebras: filed for IPO, following AWS and OpenAI deals \u2192 indicates growing investor interest and market maturity for specialized AI chip companies, validating demand for high-performance AI compute."
       ],
-      "confidence": "low",
+      "confidence": "medium",
       "trend": "stable"
     },
     {
@@ -24,9 +18,9 @@
       "description": "Major AI labs are continuously refining their foundational models, including subtle but significant updates to system prompts that guide model behavior and performance.",
       "why_it_matters": "The evolution of system prompts reflects ongoing research and development efforts to enhance model capabilities, control, and reliability, which directly impacts how these models perform in various applications.",
       "developments": [
-        "Anthropic: updated Claude Opus system prompt (4.6 to 4.7) \u2192 reflects ongoing model evolution and refinement by major AI labs."
+        "Anthropic: updated Claude Opus system prompt (4.6 to 4.7) \u2192 reflects ongoing model evolution and refinement by major AI labs to enhance capabilities and control."
       ],
-      "confidence": "low",
+      "confidence": "medium",
       "trend": "stable"
     }
   ],
