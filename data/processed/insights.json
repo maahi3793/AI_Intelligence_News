@@ -1,7 +1,13 @@
 {
+<<<<<<< Updated upstream
   "date": "2026-04-19",
   "total_input_articles": 2,
   "total_after_filter": 2,
+=======
+  "date": "2026-04-20",
+  "total_input_articles": 8,
+  "total_after_filter": 6,
+>>>>>>> Stashed changes
   "themes": [
     {
       "name": "AI Business & Strategy",
