@@ -441,8 +441,9 @@ def run_scout():
     eng.fetch_all()
     final_output = eng.run_pipeline()
     
+    run_date_str = (datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(hours=8)).date().isoformat()
     out_obj = {
-        "run_date": (datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(hours=8)).date().isoformat(),
+        "run_date": run_date_str,
         "run_timestamp_utc": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "metadata": eng.stats,
         "articles": []
@@ -468,7 +469,7 @@ def run_scout():
         json.dump(out_obj, f, indent=2)
 
     # Logging
-    print(f"\n=== SCOUT AGENT RUN: {datetime.date.today().isoformat()} ===")
+    print(f"\n=== SCOUT AGENT RUN: {run_date_str} ===")
     print(f"Sources fetched       : {eng.stats['fetched_total']} total")
     print("----------------------------------")
     print(f"Dropped (zero AI ctx) : {eng.stats['dropped_zero_ai_context']}")
