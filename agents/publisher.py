@@ -107,10 +107,17 @@ def run_publisher():
     validate_data(data)
     publish_date = data["date"]
     
-    # 3. Check Idempotency
-    if check_exists(supabase, publish_date):
-        print(f"[PUBLISHER] SKIP: already exists ({publish_date})")
-        sys.exit(0)
+    # 3. Check Idempotency (Converted to Upsert Logic v2)
+    existing_id = None
+    try:
+        response = supabase.table("newsletters").select("id").eq("publish_date", publish_date).execute()
+        if response.data:
+            existing_id = response.data[0]["id"]
+            print(f"[PUBLISHER] UPDATING: Date {publish_date} exists (ID: {existing_id}). Purging old records for fresh sync...")
+            # Delete triggers cascade on articles/insights if enabled, or we let the insert handle the fresh state.
+            supabase.table("newsletters").delete().eq("id", existing_id).execute()
+    except Exception as e:
+        print(f"[PUBLISHER] WARNING: Idempotency check/purge failed: {e}")
         
     newsletter_id = None
     

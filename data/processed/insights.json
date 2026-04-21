@@ -1,20 +1,69 @@
 {
-  "date": "2026-04-20",
-  "total_input_articles": 4,
-  "total_after_filter": 1,
-  "themes": [],
-  "top_insights": [],
+  "date": "2026-04-21",
+  "total_input_articles": 11,
+  "total_after_filter": 3,
+  "themes": [
+    {
+      "name": "AI Governance & Risk",
+      "description": "A significant majority of enterprises (72%) lack adequate control and security over their AI platforms, despite believing they do. This indicates a critical gap in AI governance implementation.",
+      "why_it_matters": "Poor AI governance exposes organizations to security risks, compliance issues, and potential operational failures, hindering safe and effective AI adoption at scale.",
+      "developments": [
+        "Enterprises: 72% of organizations lack adequate control and security over their AI platforms \u2192 increased exposure to security risks and compliance issues."
+      ],
+      "confidence": "low",
+      "trend": "emerging"
+    },
+    {
+      "name": "Model Development & Transparency",
+      "description": "Anthropic continues to publish system prompt changes for its Claude Opus models, offering transparency into model evolution.",
+      "why_it_matters": "Publicly available system prompt changes provide valuable insights into how AI models are being fine-tuned and directed, aiding researchers and developers in understanding model behavior and potential biases. This transparency is rare among major AI labs.",
+      "developments": [
+        "Anthropic: Continues to publish system prompt changes for Claude Opus models \u2192 provides rare transparency into model evolution and behavior."
+      ],
+      "confidence": "medium",
+      "trend": "emerging"
+    },
+    {
+      "name": "AI-Powered Niche Applications",
+      "description": "Hearst Newspapers launched TX Tax, an AI-powered tool to help Texas homeowners protest property taxes by generating reports from public data.",
+      "why_it_matters": "This demonstrates the continued expansion of AI into highly specific, consumer-facing applications, automating complex data analysis for practical, personal financial benefits.",
+      "developments": [
+        "Hearst Newspapers: Launched TX Tax, an AI-powered property tax protest tool \u2192 automates complex data analysis for consumer financial benefit."
+      ],
+      "confidence": "low",
+      "trend": "emerging"
+    }
+  ],
+  "top_insights": [
+    "The increasing deployment of AI, from enterprise platforms to niche consumer tools, highlights a growing tension between innovation and the need for robust governance and transparency.",
+    "While AI applications continue to diversify into specialized domains, the foundational challenges of ensuring model transparency and enterprise-level governance remain critical for sustainable and trustworthy AI adoption."
+  ],
   "signal_vs_noise": {
-    "strong_signal": [],
+    "strong_signal": [
+      "The AI governance mirage: Why 72% of enterprises don\u2019t have the control and security they think they do",
+      "Changes in the system prompt between Claude Opus 4.6 and 4.7",
+      "[Initiative] TX Tax"
+    ],
     "weak_signal": [
-      "How to Ground a Korean AI Agent in Real Demographics with Synthetic Personas"
+      "OpenAI helps Hyatt advance AI among colleagues",
+      "Nothing Warp is back, but you won\u2019t find it on the Play Store",
+      "Three AI coding agents leaked secrets through a single prompt injection. One vendor's system card predicted it",
+      "[Initiative] Guardian AI Tag Pages",
+      "Yelp is making its AI chatbot way more useful",
+      "No workers for Meta AI data centres? Mark Zuckerberg is offering to train them for free",
+      "Autonomous AI at Scale: Adobe Agents Unlock Breakthrough Creative Intelligence With NVIDIA and WPP",
+      "NVIDIA and Partners Showcase the Future of AI-Driven Manufacturing at Hannover Messe 2026"
     ]
   },
   "temporal_analysis": {
-    "new_signals": [],
+    "new_signals": [
+      "AI Governance & Risk",
+      "Model Development & Transparency",
+      "AI-Powered Niche Applications"
+    ],
     "decayed_signals": [
-      "AI Business & Strategy (unconfirmed)",
-      "Model Releases & Capabilities (unconfirmed)"
+      "AI Business & Strategy",
+      "Model Releases & Capabilities"
     ]
   }
 }

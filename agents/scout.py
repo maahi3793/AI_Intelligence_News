@@ -24,8 +24,8 @@ MAX_OUTPUT             = 20
 MIN_OUTPUT             = 5
 REDDIT_MAX_PCT         = 0.20   
 TEXT_WINDOW_CHARS      = 300    
-DATE_WINDOW_HOURS      = 36     
-FALLBACK_WINDOW_HOURS  = 48     
+DATE_WINDOW_HOURS      = 48     
+FALLBACK_WINDOW_HOURS  = 72     
 
 GNEWS_API_KEY = "3eb2aa32e0414793285c08e5f5c2cd9c"
 CURRENTS_API_KEY = "xlejpiA7TtRidCMPy5m6Dsv09WMCbnwS-CbcVWPCJJ6I-gPV"
@@ -441,7 +441,12 @@ def run_scout():
     eng.fetch_all()
     final_output = eng.run_pipeline()
     
-    run_date_str = (datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(hours=8)).date().isoformat()
+    target_tz_offset = 8
+    utc_now = datetime.datetime.now(datetime.timezone.utc)
+    pst_now = utc_now - datetime.timedelta(hours=target_tz_offset)
+    run_date_str = pst_now.date().isoformat()
+    
+    print(f"[SYSTEM] CLOCK SYNC: UTC({utc_now.strftime('%H:%M')}) -> PST({pst_now.strftime('%H:%M')}) | TARGET_DATE: {run_date_str}")
     out_obj = {
         "run_date": run_date_str,
         "run_timestamp_utc": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),

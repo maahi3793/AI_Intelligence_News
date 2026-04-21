@@ -164,8 +164,12 @@ If articles conflict:
 
 3. WEAK SIGNAL SUPPRESSION
 If a theme:
-- has only 1 weak article
+- has only 1 article AND that article's relevance_score <= 2
 → drop it entirely
+
+If a theme:
+- has 1 article but its relevance_score >= 4 (Tier 1 signal)
+→ keep it as a low-confidence dominant theme.
 
 4. INSIGHT VALIDATION
 Before output:
