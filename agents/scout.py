@@ -62,14 +62,14 @@ TIER1_DOMAINS = [
     "arxiv.org", "huggingface.co", "openai.com", "deepmind.google",
     "anthropic.com", "ai.google", "research.google", "blog.google",
     "meta.com/research", "mistral.ai", "cohere.com", "stability.ai",
-    "together.ai", "ai.meta.com"
+    "together.ai", "ai.meta.com", "cnet.com"
 ]
 
 TIER2_DOMAINS = [
     "techcrunch.com", "venturebeat.com", "wired.com", "arstechnica.com",
     "thenextweb.com", "theregister.com", "zdnet.com", "ieee.org",
     "technologyreview.com", "nature.com", "science.org", 
-    "androidpolice.com", "androidauthority.com", "smol.ai", "cnet.com"
+    "androidpolice.com", "androidauthority.com", "smol.ai"
 ]
 
 AGGREGATOR_DOMAINS = [
