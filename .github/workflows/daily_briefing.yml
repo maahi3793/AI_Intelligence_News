@@ -30,12 +30,14 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
         run: |
           # The system config.py is regenerated natively via GH Secrets preventing public exposure.
           echo "GEMINI_API_KEY = '${GEMINI_API_KEY}'" > config.py
           echo "MODEL_NAME = 'gemini-2.5-flash'" >> config.py
           echo "SUPABASE_URL = '${SUPABASE_URL}'" >> config.py
           echo "SUPABASE_KEY = '${SUPABASE_KEY}'" >> config.py
+          echo "NEWS_API_KEY = '${NEWS_API_KEY}'" >> config.py
 
       - name: Execute Autonomous Multi-Agent Pipeline
         run: |

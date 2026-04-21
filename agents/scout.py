@@ -29,6 +29,7 @@ FALLBACK_WINDOW_HOURS  = 72
 
 GNEWS_API_KEY = "3eb2aa32e0414793285c08e5f5c2cd9c"
 CURRENTS_API_KEY = "xlejpiA7TtRidCMPy5m6Dsv09WMCbnwS-CbcVWPCJJ6I-gPV"
+NEWS_API_KEY = "9a1818ed317f4f5d95b35e9e40526f6b"
 
 RSS_FEEDS = [
     "https://deepmind.google/blog/rss.xml",
@@ -55,7 +56,6 @@ RSS_FEEDS = [
     "https://www.androidpolice.com/feed/",
     "https://www.androidauthority.com/feed/",
     "https://news.smol.ai/rss.xml",
-    "https://www.cnet.com/rss/ai-atlas/",
 ]
 
 TIER1_DOMAINS = [
@@ -214,7 +214,6 @@ class ScoutEngine:
                     if not title or not link: continue
                     summary = strip_html(a.get("description", ""))
                     dt = parse_utc(a.get("publishedAt", ""))
-                    self._ingest(title, summary, link, dt, True)
         except: pass
 
         # CURRENTS
@@ -229,6 +228,24 @@ class ScoutEngine:
                     if not title or not link: continue
                     summary = strip_html(a.get("description", ""))
                     dt = parse_utc(a.get("published", ""))
+                    self._ingest(title, summary, link, dt, True)
+        except: pass
+
+        # NEWS API (Targeting CNET AI Atlas)
+        try:
+            query = "AI Atlas"
+            domains = "cnet.com"
+            url = f"https://newsapi.org/v2/everything?q={query.replace(' ', '+')}&domains={domains}&apiKey={NEWS_API_KEY}"
+            req = urllib.request.Request(url, headers={'User-Agent':'Mozilla/5.0'})
+            with urllib.request.urlopen(req, timeout=10) as response:
+                payload = json.loads(response.read().decode()).get("articles", [])
+                self.stats["fetched_total"] += len(payload)
+                for a in payload:
+                    title = strip_html(a.get("title", ""))
+                    link = a.get("url", "")
+                    if not title or not link: continue
+                    summary = strip_html(a.get("description", "") or a.get("content", ""))
+                    dt = parse_utc(a.get("publishedAt", ""))
                     self._ingest(title, summary, link, dt, True)
         except: pass
 
