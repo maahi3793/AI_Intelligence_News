@@ -55,6 +55,7 @@ RSS_FEEDS = [
     "https://www.androidpolice.com/feed/",
     "https://www.androidauthority.com/feed/",
     "https://news.smol.ai/rss.xml",
+    "https://www.cnet.com/rss/ai-atlas/",
 ]
 
 TIER1_DOMAINS = [
@@ -68,7 +69,7 @@ TIER2_DOMAINS = [
     "techcrunch.com", "venturebeat.com", "wired.com", "arstechnica.com",
     "thenextweb.com", "theregister.com", "zdnet.com", "ieee.org",
     "technologyreview.com", "nature.com", "science.org", 
-    "androidpolice.com", "androidauthority.com", "smol.ai"
+    "androidpolice.com", "androidauthority.com", "smol.ai", "cnet.com"
 ]
 
 AGGREGATOR_DOMAINS = [
