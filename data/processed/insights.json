@@ -1,46 +1,20 @@
 {
-  "date": "2026-04-19",
-  "total_input_articles": 2,
-  "total_after_filter": 2,
-  "themes": [
-    {
-      "name": "AI Business & Strategy",
-      "description": "Specialized AI hardware companies are seeking public funding, signaling market maturity and growing investor confidence in foundational AI technologies.",
-      "why_it_matters": "The IPO of an AI chip startup indicates increasing investor interest and demand for specialized hardware, which is critical for supporting the expanding AI ecosystem and its compute-intensive requirements.",
-      "developments": [
-        "Cerebras: filed for IPO, following AWS and OpenAI deals \u2192 indicates growing investor interest and market maturity for specialized AI chip companies, validating demand for high-performance AI compute."
-      ],
-      "confidence": "medium",
-      "trend": "stable"
-    },
-    {
-      "name": "Model Releases & Capabilities",
-      "description": "Major AI labs are continuously refining their foundational models, including subtle but significant updates to system prompts that guide model behavior and performance.",
-      "why_it_matters": "The evolution of system prompts reflects ongoing research and development efforts to enhance model capabilities, control, and reliability, which directly impacts how these models perform in various applications.",
-      "developments": [
-        "Anthropic: updated Claude Opus system prompt (4.6 to 4.7) \u2192 reflects ongoing model evolution and refinement by major AI labs to enhance capabilities and control."
-      ],
-      "confidence": "medium",
-      "trend": "stable"
-    }
-  ],
-  "top_insights": [
-    "The market is increasingly prioritizing the deployment of specialized AI products and autonomous agents for practical business applications, driving demand for solutions that automate complex tasks across diverse sectors.",
-    "The financial and technical focus on AI infrastructure, evidenced by specialized hardware IPOs and optimization for inference compute, underscores a maturing ecosystem where cost-efficiency and foundational capabilities are paramount for scaling real-world AI deployments.",
-    "Continuous refinement of core AI models, including system prompt evolution, is occurring in parallel with the expansion of these models into a wider array of practical applications, highlighting the dual focus on foundational improvement and real-world utility."
-  ],
+  "date": "2026-04-20",
+  "total_input_articles": 4,
+  "total_after_filter": 1,
+  "themes": [],
+  "top_insights": [],
   "signal_vs_noise": {
-    "strong_signal": [
-      "AI chip startup Cerebras files for IPO",
-      "Changes in the system prompt between Claude Opus 4.6 and 4.7"
-    ],
-    "weak_signal": []
+    "strong_signal": [],
+    "weak_signal": [
+      "How to Ground a Korean AI Agent in Real Demographics with Synthetic Personas"
+    ]
   },
   "temporal_analysis": {
     "new_signals": [],
     "decayed_signals": [
-      "AI Products & Features (unconfirmed)",
-      "AI Infrastructure & Hardware (unconfirmed)"
+      "AI Business & Strategy (unconfirmed)",
+      "Model Releases & Capabilities (unconfirmed)"
     ]
   }
 }
