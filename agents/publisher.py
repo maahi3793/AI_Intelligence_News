@@ -1,7 +1,7 @@
 import os
 import sys
 import json
-from datetime import datetime
+from datetime import datetime, timezone
 
 # Import official Supabase client
 from supabase import create_client, Client

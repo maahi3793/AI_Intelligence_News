@@ -18,8 +18,8 @@ from difflib import SequenceMatcher
 # ----------------------------------------------------------------
 # CONSTANTS
 # ----------------------------------------------------------------
-SCORE_THRESHOLD        = 4      
-FALLBACK_THRESHOLD     = 2      
+SCORE_THRESHOLD        = 3      
+FALLBACK_THRESHOLD     = 1      
 MAX_OUTPUT             = 20
 MIN_OUTPUT             = 5
 REDDIT_MAX_PCT         = 0.20   
@@ -37,6 +37,8 @@ RSS_FEEDS = [
     "https://www.anthropic.com/news/rss.xml",
     "https://www.anthropic.com/engineering/rss.xml",
     "https://openai.com/news/rss.xml",
+    "https://ai.meta.com/blog/rss/",
+    "https://mistral.ai/news/feed.xml",
     "https://nvidianews.nvidia.com/rss.xml",
     "https://developer.nvidia.com/blog/feed/",
     "https://techcrunch.com/category/artificial-intelligence/feed/",
@@ -231,11 +233,11 @@ class ScoutEngine:
                     self._ingest(title, summary, link, dt, True)
         except: pass
 
-        # NEWS API (Targeting CNET AI Atlas)
+        # NEWS API (Targeting CNET AI)
         try:
-            query = "AI Atlas"
+            query = "AI"
             domains = "cnet.com"
-            url = f"https://newsapi.org/v2/everything?q={query.replace(' ', '+')}&domains={domains}&apiKey={NEWS_API_KEY}"
+            url = f"https://newsapi.org/v2/everything?q={query}&domains={domains}&sortBy=publishedAt&apiKey={NEWS_API_KEY}"
             req = urllib.request.Request(url, headers={'User-Agent':'Mozilla/5.0'})
             with urllib.request.urlopen(req, timeout=10) as response:
                 payload = json.loads(response.read().decode()).get("articles", [])
@@ -314,12 +316,15 @@ class ScoutEngine:
 
     def run_pipeline(self):
         now_dt = datetime.datetime.now(datetime.timezone.utc)
-        start_of_today = now_dt.replace(hour=0, minute=0, second=0, microsecond=0)
+        
+        # TRANSITION TO ROLLING 24-HOUR WINDOW
+        # Instead of midnight, we look back exactly 24 hours from current execution.
+        primary_window_dt = now_dt - datetime.timedelta(hours=24)
         
         # Time processing
         pool = []
         for a in self.articles:
-            if a["dt_obj"] >= start_of_today:
+            if a["dt_obj"] >= primary_window_dt:
                 pool.append(a)
                 
         # Primary Filter
@@ -515,7 +520,10 @@ def run_scout():
     print("----------------------------------")
     print("TOP 5 BY SCORE:")
     for i, a in enumerate(final_output[:5]):
-        print(f"  {i+1}. [{a['final_score']}] [{a['source_type']}] {a['title']}")
+        try:
+            print(f"  {i+1}. [{a['final_score']}] [{a['source_type']}] {a['title']}")
+        except UnicodeEncodeError:
+            print(f"  {i+1}. [{a['final_score']}] [{a['source_type']}] {a['title'].encode('ascii', 'ignore').decode('ascii')}")
     print("===================================")
 
 if __name__ == "__main__":

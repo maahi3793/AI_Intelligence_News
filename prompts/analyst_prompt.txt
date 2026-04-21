@@ -20,8 +20,8 @@ INPUT HANDLING
 ---------------------------------------------------------------
 
 You will receive TWO JSON inputs appended below this prompt:
-1. CURRENT RUN (today's articles)
-2. PREVIOUS RUN (yesterday's analysis)
+1. CURRENT RUN (last 24 hours of articles)
+2. PREVIOUS RUN (intelligence state of the environment prior to this run)
 
 You MUST:
 - Parse both carefully
