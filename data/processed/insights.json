@@ -1,26 +1,29 @@
 {
-  "date": "2026-05-21",
-  "total_input_articles": 12,
-  "total_after_filter": 12,
+  "date": "2026-05-22",
+  "total_input_articles": 16,
+  "total_after_filter": 16,
   "themes": [
     {
       "name": "AI Products & Features: Agent Memory & Applications",
-      "description": "Significant advancements are being made in AI agent architecture, specifically addressing memory limitations and enhancing reasoning capabilities. New AI-powered applications are emerging in specialized fields like mental health therapy, production operations for coding, and data analysis tools.",
-      "why_it_matters": "Improved agent memory and reasoning are critical for developing more reliable and autonomous AI systems, reducing operational costs and latency. The expansion into specialized applications demonstrates AI's growing utility in solving complex, real-world problems and enhancing professional workflows.",
+      "description": "Significant progress is being made in enhancing AI agent capabilities, particularly in addressing memory limitations and improving reasoning. This is leading to the development of new AI-powered products across diverse sectors, including local home security, advanced wearable technology, mental health therapy, and data analysis tools.",
+      "why_it_matters": "Overcoming fundamental memory and reasoning challenges is critical for building more reliable, autonomous, and efficient AI agents. The proliferation of specialized AI applications demonstrates the technology's increasing maturity and its ability to deliver practical value in both consumer and enterprise contexts.",
       "developments": [
         "[AI Agents]: Receive a 0.12% parameter add-on \u2192 significantly improves working memory beyond RAG limitations.",
-        "[Enterprise AI Agents]: Experience failures due to forgetting learned information \u2192 addressed by new frameworks like decision context graphs for structured memory and reasoning.",
+        "[Enterprise AI Agents]: Experience failures due to forgetting learned information \u2192 addressed by new frameworks like decision context graphs and the need for terminal interfaces.",
+        "[Eufy]: Launches EdgeAgent for home security \u2192 offers local AI processing and storage without subscription, enhancing privacy.",
+        "[Google]: Demos prototype Android XR glasses with Gemini-powered translation and navigation \u2192 brings AI directly into the user's field of view.",
         "[The Path]: Launches an AI therapy model scoring 95 on Vera-MH safety benchmark \u2192 offers a safer alternative to consumer bots for mental health support.",
-        "[Resolve AI]: Expands its platform with always-on background agents and redesigned investigation architecture \u2192 aims to fix production system issues caused by the AI coding boom.",
-        "[Datasette Agent]: Releases initial versions (0.1a0, 0.1a2, 0.1a3) and plugins (sprites, charts) \u2192 provides an extensible AI assistant for Datasette with improved SQL query handling and sandboxing capabilities."
+        "[Datasette Agent]: Releases initial versions and plugins (sprites, charts) \u2192 provides an extensible AI assistant for Datasette with improved SQL query handling and sandboxing capabilities.",
+        "[NPA-AI-Co-Lab]: Releases Schema Mapping CLI \u2192 tool for analyzing and structuring CSV data using LLM APIs.",
+        "[Journalism Summit]: Highlights 9 real AI use cases in journalism \u2192 demonstrates practical AI applications in media."
       ],
       "confidence": "high",
       "trend": "growing"
     },
     {
       "name": "AI Infrastructure & Hardware: NVIDIA & Telco AI Factories",
-      "description": "NVIDIA is actively promoting and developing AI factories and scaling infrastructure, with telcos globally adopting the NVIDIA Cloud Partner architecture to build sovereign AI factories and offer token-metered AI services.",
-      "why_it_matters": "This indicates a strategic push to democratize access to high-performance AI compute, enabling governments and enterprises to deploy AI services with greater control and efficiency. It highlights NVIDIA's central role in shaping the global AI infrastructure landscape.",
+      "description": "NVIDIA continues to lead the development of AI factories and scaling infrastructure, with global telcos adopting its Cloud Partner architecture to build sovereign AI factories and offer token-metered AI services.",
+      "why_it_matters": "This trend signifies a strategic push to decentralize and democratize access to high-performance AI compute, enabling governments and enterprises to deploy AI services with greater control, efficiency, and new monetization models. It reinforces NVIDIA's pivotal role in shaping the global AI infrastructure landscape.",
       "developments": [
         "[NVIDIA]: Showcases AI factories and scaling infrastructure at GTC Taipei/COMPUTEX \u2192 highlights ongoing advancements in AI compute and agentic/physical AI.",
         "[Telcos]: Building sovereign AI factories based on NVIDIA Cloud Partner architecture \u2192 enables token-metered AI services for governments and enterprises."
@@ -29,59 +32,71 @@
       "trend": "growing"
     },
     {
-      "name": "AI Business & Strategy: Investment & Workforce Impact",
-      "description": "A major tech company (Meta) is undergoing significant workforce reductions, explicitly citing the need to offset substantial investments in AI.",
-      "why_it_matters": "This signals that the intense capital requirements for AI development are directly impacting corporate workforce strategies, potentially leading to a reallocation of resources and a shift in employment priorities within the tech sector.",
+      "name": "Regulation & Risk: AI Hallucinations & Research Integrity",
+      "description": "A new study reveals that AI hallucinations are significantly impacting the research world by generating a large number of fake citations in scientific papers.",
+      "why_it_matters": "This highlights a critical and growing risk associated with AI adoption in academic and research environments. It underscores the urgent need for robust validation mechanisms, ethical guidelines, and potentially new regulatory frameworks to preserve the integrity and trustworthiness of scientific output.",
       "developments": [
-        "[Meta]: Lays off thousands of employees \u2192 offsets substantial investments in AI."
+        "[Scientists]: Warn that AI hallucinations produced nearly 150,000 fake citations \u2192 wreaks havoc in the research world, undermining integrity."
       ],
       "confidence": "low",
       "trend": "emerging"
     },
     {
-      "name": "Model Releases & Capabilities: Government AI Model Adoption",
-      "description": "The Pentagon is initiating tests of new AI models with the explicit goal of replacing existing deployments of Anthropic Claude.",
-      "why_it_matters": "This indicates a dynamic and competitive landscape for AI model providers, particularly in high-stakes government and defense sectors. It also highlights the continuous evaluation and potential rapid turnover of preferred AI models based on performance, security, or strategic considerations.",
+      "name": "AI Business & Strategy: Google's AI Position",
+      "description": "Google's Gemini is perceived to be gaining a competitive edge over OpenAI's ChatGPT, demonstrating increased relevance and usefulness through deep integration into Google's core product ecosystem.",
+      "why_it_matters": "This indicates a dynamic and evolving competitive landscape among major AI developers. Google's strategy of embedding AI across its popular products could lead to broader user adoption and solidify its position as a dominant player in the AI market.",
       "developments": [
-        "[Pentagon]: Begins testing new AI models \u2192 aims to replace existing Anthropic Claude deployments."
+        "[Google]: Gemini is perceived to have leapfrogged OpenAI's ChatGPT in relevance and usefulness \u2192 indicates Google is winning the AI race by blending AI into its products."
       ],
       "confidence": "low",
       "trend": "emerging"
     }
   ],
   "top_insights": [
-    "The next frontier for AI agents lies in overcoming fundamental memory and reasoning limitations, driving innovation in architectural design and enabling more robust, reliable applications across diverse professional domains.",
-    "Global AI infrastructure is rapidly evolving towards distributed 'AI factories' and specialized compute services, with key players like NVIDIA facilitating sovereign AI capabilities and new monetization models for AI resources.",
-    "The economic implications of aggressive AI investment are becoming tangible, influencing corporate restructuring and prompting government entities to continuously re-evaluate and adopt leading-edge AI models for strategic advantage."
+    "The ongoing challenge of AI agent reliability, particularly concerning memory and reasoning, is driving innovation in architectural design and prompting the development of specialized tools and frameworks to ensure robust performance across diverse applications.",
+    "The expansion of AI infrastructure, spearheaded by NVIDIA's 'AI factory' concept and telco partnerships, is democratizing access to advanced compute resources, enabling new business models for AI services and fostering sovereign AI capabilities globally.",
+    "As AI integration deepens across industries and consumer products (e.g., home security, wearables, therapy), critical issues like data integrity (AI hallucinations in research) and competitive positioning (Google's AI lead) are emerging as key areas of focus for both developers and regulators."
   ],
   "signal_vs_noise": {
     "strong_signal": [
+      "Scientists Warn AI Slop Is Wreaking Havoc in the Research World",
+      "Eufy Brings Local AI Agents to Home Security, the First I've Seen Without a Subscription",
       "A 0.12% parameter add-on gives AI agents the working memory RAG can't",
+      "Your AI agents need a terminal, not just a vector database",
+      "We tried Google\u2019s AI glasses and they\u2019re almost there",
       "Enterprise AI agents keep failing because they forget what they learned",
       "The Path, founded by Tony Robbins and Calm alums, hopes to offer safer AI therapy",
-      "Resolve AI says the AI coding boom is breaking production systems. It wants to fix that.",
       "datasette-agent-sprites 0.1a0",
-      "Building Token-Metered AI Services on Telco AI Factories",
+      "Building Token\u2011Metered AI Services on Telco AI Factories",
       "NVIDIA GTC Taipei at COMPUTEX: Live Updates on What\u2019s Next in AI",
       "Datasette Agent",
       "datasette-agent-charts 0.1a2",
-      "datasette-agent 0.1a3"
+      "datasette-agent 0.1a3",
+      "[News] 9 Real AI Use Cases from the Hacks/Hackers Journalism Summit 2026",
+      "[Resource] NPA's Schema Mapping CLI"
     ],
     "weak_signal": [
-      "Pentagon starts testing new AI models to replace Anthropic Claude",
-      "Meta lays off thousands of employees to offset AI investments"
+      "How Google is starting to win the AI race"
     ]
   },
   "temporal_analysis": {
     "new_signals": [
-      "AI therapy applications (The Path)",
-      "AI for production operations in coding (Resolve AI)",
-      "Extensible AI assistants for data analysis (Datasette Agent)",
-      "NVIDIA-powered Telco AI Factories for token-metered services",
-      "Corporate workforce restructuring due to AI investments (Meta layoffs)",
-      "Government evaluation and replacement of AI models (Pentagon testing)"
+      "AI hallucinations impacting research integrity (fake citations)",
+      "Google's perceived lead in the AI race / Gemini integration into core products",
+      "Local AI agents in home security (Eufy EdgeAgent)",
+      "Google's prototype Android XR glasses with Gemini integration",
+      "Schema mapping CLI tool for structuring data using LLM APIs",
+      "Real AI use cases in journalism"
     ],
     "decayed_signals": [
+      {
+        "topic": "AI Business & Strategy: Investment & Workforce Impact",
+        "status": "unconfirmed"
+      },
+      {
+        "topic": "Model Releases & Capabilities: Government AI Model Adoption",
+        "status": "unconfirmed"
+      },
       {
         "topic": "Andrej Karpathy joining Anthropic (talent movement)",
         "status": "unconfirmed"
