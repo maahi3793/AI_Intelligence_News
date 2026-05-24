@@ -1,65 +1,54 @@
 {
-  "date": "2026-05-22",
-  "total_input_articles": 16,
-  "total_after_filter": 16,
+  "date": "2026-05-23",
+  "total_input_articles": 14,
+  "total_after_filter": 14,
   "themes": [
     {
-      "name": "AI Products & Features: Agent Memory & Applications",
-      "description": "Significant progress is being made in enhancing AI agent capabilities, particularly in addressing memory limitations and improving reasoning. This is leading to the development of new AI-powered products across diverse sectors, including local home security, advanced wearable technology, mental health therapy, and data analysis tools.",
-      "why_it_matters": "Overcoming fundamental memory and reasoning challenges is critical for building more reliable, autonomous, and efficient AI agents. The proliferation of specialized AI applications demonstrates the technology's increasing maturity and its ability to deliver practical value in both consumer and enterprise contexts.",
+      "name": "AI Products & Features: Diverse Applications & Tools",
+      "description": "The market is seeing a continued expansion of AI-powered products and tools across various sectors, including enhanced home security, advanced wearables, mental health therapy, and data analysis. These applications often focus on specific functionalities and user benefits, such as privacy, safety, and improved data handling.",
+      "why_it_matters": "The proliferation of specialized AI products demonstrates the technology's increasing maturity and its ability to deliver practical value in both consumer and enterprise contexts. This trend indicates a move towards more targeted and integrated AI solutions, addressing specific user needs and market gaps.",
       "developments": [
-        "[AI Agents]: Receive a 0.12% parameter add-on \u2192 significantly improves working memory beyond RAG limitations.",
-        "[Enterprise AI Agents]: Experience failures due to forgetting learned information \u2192 addressed by new frameworks like decision context graphs and the need for terminal interfaces.",
         "[Eufy]: Launches EdgeAgent for home security \u2192 offers local AI processing and storage without subscription, enhancing privacy.",
         "[Google]: Demos prototype Android XR glasses with Gemini-powered translation and navigation \u2192 brings AI directly into the user's field of view.",
         "[The Path]: Launches an AI therapy model scoring 95 on Vera-MH safety benchmark \u2192 offers a safer alternative to consumer bots for mental health support.",
-        "[Datasette Agent]: Releases initial versions and plugins (sprites, charts) \u2192 provides an extensible AI assistant for Datasette with improved SQL query handling and sandboxing capabilities.",
-        "[NPA-AI-Co-Lab]: Releases Schema Mapping CLI \u2192 tool for analyzing and structuring CSV data using LLM APIs.",
-        "[Journalism Summit]: Highlights 9 real AI use cases in journalism \u2192 demonstrates practical AI applications in media."
+        "[Datasette Agent]: Announces first release and plugins (sprites, charts) \u2192 provides an extensible AI assistant for Datasette with improved SQL query handling and sandboxing capabilities.",
+        "[NPA-AI-Co-Lab]: Releases Schema Mapping CLI \u2192 tool for analyzing and structuring CSV data using LLM APIs."
       ],
-      "confidence": "high",
+      "confidence": "medium",
       "trend": "growing"
     },
     {
+      "name": "Research & Breakthroughs: Enhancing AI Agent Memory & Reasoning",
+      "description": "Significant research and development efforts are focused on overcoming fundamental limitations of AI agents, particularly concerning working memory, reasoning, and interaction interfaces. New architectural approaches, such as Hebbian models, are also being explored to advance AI capabilities.",
+      "why_it_matters": "Addressing core challenges like agent memory and reasoning is crucial for developing more robust, autonomous, and reliable AI systems. These advancements are foundational for the next generation of AI agents that can perform complex tasks more effectively and consistently.",
+      "developments": [
+        "[AI Agents]: Receive a 0.12% parameter add-on \u2192 significantly improves working memory beyond RAG limitations.",
+        "[Researchers]: Propose AI agents need a terminal interface \u2192 addresses limited information from retrieval interfaces, improving agent workflow.",
+        "[Enterprise AI Agents]: Experience failures due to forgetting learned information \u2192 addressed by new frameworks like decision context graphs.",
+        "[Researchers (Reddit)]: Develop a Hebbian architecture AI model \u2192 operates without backpropagation or gradients, scaling to 100k neurons."
+      ],
+      "confidence": "medium",
+      "trend": "emerging"
+    },
+    {
       "name": "AI Infrastructure & Hardware: NVIDIA & Telco AI Factories",
-      "description": "NVIDIA continues to lead the development of AI factories and scaling infrastructure, with global telcos adopting its Cloud Partner architecture to build sovereign AI factories and offer token-metered AI services.",
+      "description": "NVIDIA continues to drive the development of AI factories and scaling infrastructure, with global telecommunication companies adopting its Cloud Partner architecture to build sovereign AI factories and offer token-metered AI services.",
       "why_it_matters": "This trend signifies a strategic push to decentralize and democratize access to high-performance AI compute, enabling governments and enterprises to deploy AI services with greater control, efficiency, and new monetization models. It reinforces NVIDIA's pivotal role in shaping the global AI infrastructure landscape.",
       "developments": [
         "[NVIDIA]: Showcases AI factories and scaling infrastructure at GTC Taipei/COMPUTEX \u2192 highlights ongoing advancements in AI compute and agentic/physical AI.",
         "[Telcos]: Building sovereign AI factories based on NVIDIA Cloud Partner architecture \u2192 enables token-metered AI services for governments and enterprises."
       ],
       "confidence": "medium",
-      "trend": "growing"
-    },
-    {
-      "name": "Regulation & Risk: AI Hallucinations & Research Integrity",
-      "description": "A new study reveals that AI hallucinations are significantly impacting the research world by generating a large number of fake citations in scientific papers.",
-      "why_it_matters": "This highlights a critical and growing risk associated with AI adoption in academic and research environments. It underscores the urgent need for robust validation mechanisms, ethical guidelines, and potentially new regulatory frameworks to preserve the integrity and trustworthiness of scientific output.",
-      "developments": [
-        "[Scientists]: Warn that AI hallucinations produced nearly 150,000 fake citations \u2192 wreaks havoc in the research world, undermining integrity."
-      ],
-      "confidence": "low",
-      "trend": "emerging"
-    },
-    {
-      "name": "AI Business & Strategy: Google's AI Position",
-      "description": "Google's Gemini is perceived to be gaining a competitive edge over OpenAI's ChatGPT, demonstrating increased relevance and usefulness through deep integration into Google's core product ecosystem.",
-      "why_it_matters": "This indicates a dynamic and evolving competitive landscape among major AI developers. Google's strategy of embedding AI across its popular products could lead to broader user adoption and solidify its position as a dominant player in the AI market.",
-      "developments": [
-        "[Google]: Gemini is perceived to have leapfrogged OpenAI's ChatGPT in relevance and usefulness \u2192 indicates Google is winning the AI race by blending AI into its products."
-      ],
-      "confidence": "low",
-      "trend": "emerging"
+      "trend": "stable"
     }
   ],
   "top_insights": [
     "The ongoing challenge of AI agent reliability, particularly concerning memory and reasoning, is driving innovation in architectural design and prompting the development of specialized tools and frameworks to ensure robust performance across diverse applications.",
-    "The expansion of AI infrastructure, spearheaded by NVIDIA's 'AI factory' concept and telco partnerships, is democratizing access to advanced compute resources, enabling new business models for AI services and fostering sovereign AI capabilities globally.",
-    "As AI integration deepens across industries and consumer products (e.g., home security, wearables, therapy), critical issues like data integrity (AI hallucinations in research) and competitive positioning (Google's AI lead) are emerging as key areas of focus for both developers and regulators."
+    "Specialized AI applications are rapidly expanding into consumer and enterprise sectors, with a focus on privacy, safety, and enhanced user experience through integrated AI.",
+    "The foundational infrastructure for AI continues to mature, with major players like NVIDIA collaborating with telcos to establish sovereign AI factories and new monetization models for AI compute."
   ],
   "signal_vs_noise": {
     "strong_signal": [
-      "Scientists Warn AI Slop Is Wreaking Havoc in the Research World",
       "Eufy Brings Local AI Agents to Home Security, the First I've Seen Without a Subscription",
       "A 0.12% parameter add-on gives AI agents the working memory RAG can't",
       "Your AI agents need a terminal, not just a vector database",
@@ -68,27 +57,40 @@
       "The Path, founded by Tony Robbins and Calm alums, hopes to offer safer AI therapy",
       "datasette-agent-sprites 0.1a0",
       "Building Token\u2011Metered AI Services on Telco AI Factories",
+      "Hebbian architecture AI model [R]",
       "NVIDIA GTC Taipei at COMPUTEX: Live Updates on What\u2019s Next in AI",
       "Datasette Agent",
       "datasette-agent-charts 0.1a2",
       "datasette-agent 0.1a3",
-      "[News] 9 Real AI Use Cases from the Hacks/Hackers Journalism Summit 2026",
       "[Resource] NPA's Schema Mapping CLI"
     ],
-    "weak_signal": [
-      "How Google is starting to win the AI race"
-    ]
+    "weak_signal": []
   },
   "temporal_analysis": {
     "new_signals": [
-      "AI hallucinations impacting research integrity (fake citations)",
-      "Google's perceived lead in the AI race / Gemini integration into core products",
-      "Local AI agents in home security (Eufy EdgeAgent)",
-      "Google's prototype Android XR glasses with Gemini integration",
-      "Schema mapping CLI tool for structuring data using LLM APIs",
-      "Real AI use cases in journalism"
+      "Hebbian architecture AI model (novel AI architectures)"
     ],
     "decayed_signals": [
+      {
+        "topic": "Regulation & Risk: AI Hallucinations & Research Integrity",
+        "status": "unconfirmed"
+      },
+      {
+        "topic": "AI Business & Strategy: Google's AI Position",
+        "status": "unconfirmed"
+      },
+      {
+        "topic": "AI hallucinations impacting research integrity (fake citations)",
+        "status": "unconfirmed"
+      },
+      {
+        "topic": "Google's perceived lead in the AI race / Gemini integration into core products",
+        "status": "unconfirmed"
+      },
+      {
+        "topic": "Real AI use cases in journalism",
+        "status": "unconfirmed"
+      },
       {
         "topic": "AI Business & Strategy: Investment & Workforce Impact",
         "status": "unconfirmed"
