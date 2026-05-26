@@ -1,50 +1,70 @@
 {
-  "date": "2026-05-24",
-  "total_input_articles": 5,
-  "total_after_filter": 5,
+  "date": "2026-05-25",
+  "total_input_articles": 14,
+  "total_after_filter": 7,
   "themes": [
     {
-      "name": "AI Products & Features: Agent Tools & Wearables",
-      "description": "The market continues to see new AI-powered tools and hardware, specifically focusing on enhancing agentic software capabilities and integrating AI into pervasive consumer devices like smart glasses.",
-      "why_it_matters": "This trend signifies the ongoing expansion of AI into practical, user-facing applications, improving developer workflows with agent tools and pushing the boundaries of human-computer interaction through ambient AI experiences.",
+      "name": "Regulation & Risk",
+      "description": "The discourse around AI risk is broadening, encompassing new forms of technical debt within enterprise AI systems and escalating calls for external ethical oversight and governance from both industry leaders and global institutions.",
+      "why_it_matters": "This indicates a growing recognition of the complex and multifaceted risks associated with AI, moving beyond theoretical concerns to practical enterprise challenges and urgent societal implications, prompting a demand for robust regulatory and ethical frameworks.",
       "developments": [
-        "[Datasette Agent]: Releases version 0.1a4 \u2192 enhances agent chat interface within Datasette, improving data interaction.",
-        "[Google]: Demos prototype Android XR glasses with Gemini \u2192 integrates AI translation and navigation directly into the user's field of view."
+        "[VentureBeat]: Highlights \"prompt debt,\" \"retrieval debt,\" and \"evaluation debt\" \u2192 identifies new categories of technical debt and risk in enterprise AI systems.",
+        "[Anthropic Co-founder]: Warns of AI-driven job losses and calls for external oversight \u2192 emphasizes the need for proactive governance beyond Big Tech to manage societal impacts.",
+        "[Pope Leo XIV]: Issues an encyclical and stark warning on rapid AI growth \u2192 calls for ethical considerations and a \"disarm AI\" approach to safeguard humanity."
       ],
       "confidence": "medium",
       "trend": "growing"
     },
     {
-      "name": "Research & Breakthroughs: Advancements in AI Capabilities & Agent Architectures",
-      "description": "Significant research efforts are focused on improving the fundamental capabilities and architectural design of AI agents, alongside demonstrating advanced problem-solving abilities in complex domains like mathematics. Platforms for tracking these advancements are also evolving.",
-      "why_it_matters": "These developments are crucial for building more robust, autonomous, and intelligent AI systems, addressing current limitations in agent reasoning, and pushing the frontier of what AI can achieve, while also supporting the research community's ability to track progress.",
+      "name": "Research & Breakthroughs",
+      "description": "Platforms dedicated to tracking and disseminating state-of-the-art AI research are continuously being enhanced to better serve the research community.",
+      "why_it_matters": "Improved tools for tracking research are essential for accelerating scientific progress, fostering collaboration, and ensuring researchers can efficiently monitor the rapidly evolving AI landscape.",
       "developments": [
-        "[PapersWithCode]: Launches new features for its platform \u2192 improves tracking of state-of-the-art AI research.",
-        "[Researchers]: Propose AI agents need a terminal interface \u2192 addresses limitations of retrieval interfaces, improving agent workflow and reasoning.",
-        "[Google's AI]: Solves 56-year-old math problems \u2192 demonstrates advanced problem-solving capabilities, prompting discussion on AGI."
+        "[PapersWithCode]: Launches new features for its platform \u2192 improves tracking of state-of-the-art AI research."
       ],
-      "confidence": "medium",
-      "trend": "growing"
+      "confidence": "low",
+      "trend": "stable"
+    },
+    {
+      "name": "AI Products & Features",
+      "description": "Development continues on AI-powered agent tools, specifically enhancing their user interfaces and integration within existing data platforms.",
+      "why_it_matters": "These advancements make AI agents more accessible and practical for developers and users, streamlining interactions with complex data and improving workflow efficiency.",
+      "developments": [
+        "[Datasette Agent]: Releases version 0.1a4 \u2192 enhances agent chat interface within Datasette, improving data interaction."
+      ],
+      "confidence": "low",
+      "trend": "stable"
     }
   ],
   "top_insights": [
-    "The development of AI agents is progressing on two fronts: enhancing their core reasoning and interaction capabilities through research into new interfaces, and expanding their practical application through specialized tools.",
-    "AI's ability to solve complex, long-standing problems is advancing, pushing the boundaries of what's considered achievable, while simultaneously fueling discussions about the path to AGI.",
-    "The integration of AI into ambient and wearable technologies, such as smart glasses, signals a future where AI provides real-time, context-aware assistance directly within the user's environment.",
-    "The rapid pace of AI research necessitates robust platforms and tools for tracking and evaluating state-of-the-art advancements, indicating a maturing research ecosystem."
+    "The expanding definition of AI risk now includes operational and technical debt specific to AI systems, alongside broader societal and ethical concerns, necessitating comprehensive risk management strategies.",
+    "As AI capabilities advance, there is a growing call for external, independent oversight and ethical frameworks to manage its societal impact, particularly concerning job displacement and human agency, indicating a shift towards more formalized governance.",
+    "The ecosystem for AI research and development continues to mature, with ongoing improvements in tools for tracking state-of-the-art advancements and practical agentic applications, supporting faster innovation and adoption."
   ],
   "signal_vs_noise": {
     "strong_signal": [
       "PapersWithCode new features - week 1 [P]",
+      "Why prompt debt, retrieval debt, and evaluation debt are quietly reshaping enterprise AI risk",
       "datasette-agent 0.1a4",
-      "Your AI agents need a terminal, not just a vector database",
-      "We tried Google\u2019s AI glasses and they\u2019re almost there",
-      "Google's AI solves 56-year-old math problems but DeepMind CEO says this is still not AGI"
+      "Anthropic co-founder warns of AI job losses, says oversight needed from outside Big Tech",
+      "\u2018Disarm AI\u2019: Pope Leo XIV issues stark warning over rapid artificial intelligence growth",
+      "Notes on Pope Leo XIV's encyclical on AI"
     ],
-    "weak_signal": []
+    "weak_signal": [
+      "\uff33\uff4b\uff59\u682a\u5f0f\u4f1a\u793e\u300cAWS Summit Japan 2026\u300d\u306b\u51fa\u5c55",
+      "OpenAI preparing to automate AI research jobs, hiring humans to fire them later",
+      "Google's AI solves 56-year-old math problems but DeepMind CEO says this is still not AGI",
+      "OpenAI launches free AI image verification tool amid deepfake surge",
+      "AI firms use same deceptive opt-out tactics as data brokers to confuse users, study finds",
+      "AI forcing consulting firms like McKinsey to deliver results and not charge by hours: Report",
+      "[News] FAQ: AI, misinformation and journalism"
+    ]
   },
   "temporal_analysis": {
-    "new_signals": [],
+    "new_signals": [
+      "The concept of \"prompt debt, retrieval debt, and evaluation debt\" as new enterprise AI risks.",
+      "Pope Leo XIV's encyclical and stark warning on AI growth."
+    ],
     "decayed_signals": [
       {
         "topic": "AI Infrastructure & Hardware: NVIDIA & Telco AI Factories",
@@ -156,6 +176,18 @@
       },
       {
         "topic": "AI solving long-standing mathematical problems (OpenAI)",
+        "status": "unconfirmed"
+      },
+      {
+        "topic": "Your AI agents need a terminal, not just a vector database",
+        "status": "unconfirmed"
+      },
+      {
+        "topic": "We tried Google\u2019s AI glasses and they\u2019re almost there",
+        "status": "unconfirmed"
+      },
+      {
+        "topic": "Google's AI solves 56-year-old math problems but DeepMind CEO says this is still not AGI",
         "status": "unconfirmed"
       }
     ]
