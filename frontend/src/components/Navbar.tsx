@@ -17,6 +17,10 @@ export default function Navbar() {
         </Link>
         <div className="space-x-8 text-sm font-medium text-gray-600">
           <a href="/" className="hover:text-indigo-600 transition-colors">Today</a>
+          <a href="/trends" className="hover:text-indigo-600 transition-colors inline-flex items-center">
+            Trends
+            <span className="ml-1.5 w-1.5 h-1.5 rounded-full bg-gradient-to-r from-indigo-500 to-rose-500 inline-block"></span>
+          </a>
           {/* Using raw anchor tag to bypass Nextjs client-render hang on historical fetching */}
           <a href="/archive" className="hover:text-indigo-600 transition-colors">Archive</a>
         </div>
