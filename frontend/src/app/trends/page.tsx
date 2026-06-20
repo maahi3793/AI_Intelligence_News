@@ -34,7 +34,7 @@ const CHART_COLORS = [
 // ── Animated count-up hook ────────────────────────────────────────────────
 function useCountUp(target: number, duration = 1200) {
   const [value, setValue] = useState(0);
-  const rafRef = useRef<number>();
+  const rafRef = useRef<number>(0);
 
   useEffect(() => {
     const start = performance.now();
