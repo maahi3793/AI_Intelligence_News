@@ -7,6 +7,7 @@ export default function ArticleView({ article }: { article: any }) {
     case 'business': gradientBadge = "from-emerald-500 to-teal-700 text-white"; break;
     case 'general': gradientBadge = "from-rose-500 to-orange-500 text-white"; break;
     case 'students': gradientBadge = "from-purple-600 to-pink-600 text-white"; break;
+    case 'artists': gradientBadge = "from-fuchsia-600 to-rose-500 text-white"; break;
   }
 
   return (

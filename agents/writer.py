@@ -38,11 +38,12 @@ def deterministic_fallback(parsed_insights, error_msg):
                "insight_used": fallback_insight
             }
         ],
-        "skipped_audiences": ["devs", "students", "business"],
+        "skipped_audiences": ["devs", "students", "business", "artists"],
         "skip_reasons": {
             "devs": "API Fail - fallback executed",
             "students": "API Fail - fallback executed",
-            "business": "API Fail - fallback executed"
+            "business": "API Fail - fallback executed",
+            "artists": "API Fail - fallback executed"
         },
         "top_insights": parsed_insights.get("top_insights", [fallback_insight]),
         "fallback_used": True

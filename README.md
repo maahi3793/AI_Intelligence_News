@@ -49,7 +49,7 @@ The Reasoning Core. Powered by Gemini-2.5 on low temperature.
 
 ### 3. Editorial Agent (Writer)
 The Transformation Service.
-* **Audience Splitting**: Generates 4 highly specific editions simultaneously: `Devs`, `Business`, `Students`, and `General`.
+* **Audience Splitting**: Generates 5 highly specific editions simultaneously: `Devs`, `Business`, `Students`, `Artists`, and `General`.
 * **The Anti-Slop Directive**: Instructed via prompt injection to forcefully reject common AI phrasing (banned words: *leverage, delve, unlock, digital landscape*). It utilizes premium journalistic constraints, rendering semantic `<p>` and array strings directly.
 
 ### 4. Distribution Agent (Publisher)

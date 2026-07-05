@@ -2,7 +2,7 @@
 
 ## What This Is
 
-A fully automated, multi-agent AI news intelligence pipeline. It runs three agents in sequence to fetch, analyze, and write a daily newsletter from live AI news sources. The end product is a structured JSON newsletter with four audience-specific articles (devs, students, business, general).
+A fully automated, multi-agent AI news intelligence pipeline. It runs three agents in sequence to fetch, analyze, and write a daily newsletter from live AI news sources. The end product is a structured JSON newsletter with five audience-specific articles (devs, students, business, artists, general).
 
 ---
 
@@ -79,7 +79,7 @@ Uses Gemini (`gemini-2.5-flash`, temperature 0.6, top_p 0.9) to produce audience
 
 **Style target:** Morning Brew + The Hustle + Notion blog. Sharp, opinionated, human-grade.
 
-**Audiences:** `devs`, `students`, `business`, `general`
+**Audiences:** `devs`, `students`, `business`, `artists`, `general`
 - Each gets a different angle on the same story
 - Minimum 2 audiences always; target 3–4
 
@@ -200,7 +200,7 @@ The Flet/PyNexus knowledge is from a different project and is not directly relev
 ## Evolution Tracker (Completed Work)
 
 **Writer Agent (Completed V2 Upgrade):**
-- Upgraded the Writer loop mapping to strict audience angles ("Students", "Devs", "General", "Business").
+- Upgraded the Writer loop mapping to strict audience angles ("Students", "Devs", "General", "Business", "Artists").
 - Banned all "AI-Slop" tokens ("delve", "leverage", etc.) and enforced "Resilience Mode" which dynamically refits active themes to remaining unmapped audiences instead of skipping them when upstream signals are low.
 - Natively wired fallback architectures into python to avoid token drops via `max_output_tokens` bounds overrides.
 

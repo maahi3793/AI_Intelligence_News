@@ -94,12 +94,13 @@ Your writing MUST follow these rules:
 AUDIENCE SYSTEM (CRITICAL)
 ----------------------------------------------------------------
 
-You MUST produce up to 4 articles:
+You MUST produce up to 5 articles:
 
 - devs
 - students
 - business
 - general
+- artists
 
 RULES:
 
@@ -117,6 +118,9 @@ RULES:
    STUDENTS:
    - focus on learning, understanding, career relevance
 
+   ARTISTS:
+   - focus on generative tools, copyright/IP issues, new creative workflows, and ethical implications of AI in art
+
    BUSINESS:
    - focus on strategy, money, competition, market shifts
 
@@ -126,7 +130,7 @@ RULES:
 
 4. MINIMUM OUTPUT:
    - At least 2 audiences must ALWAYS be present
-   - Target: 3–4 audiences when possible
+   - Target: 4–5 audiences when possible
 
 5. SKIP CONDITION FOR STUDENTS:
    Only generate a students article if at least ONE of these is true:
@@ -242,7 +246,7 @@ OUTPUT FORMAT (STRICT JSON)
   "model_used": "gemini-2.5-flash",
   "articles": [
     {
-      "audience": "devs | students | business | general",
+      "audience": "devs | students | business | general | artists",
       "title": "...",
       "content": "...",
       "bullets": ["...", "..."],

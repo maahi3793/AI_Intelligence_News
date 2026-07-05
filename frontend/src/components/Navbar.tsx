@@ -12,7 +12,7 @@ export default function Navbar() {
             </svg>
           </div>
           <span className="font-extrabold text-xl tracking-tight text-gray-900 group-hover:text-indigo-600 transition-colors">
-            AI Intelligence
+            The AI Journal
           </span>
         </Link>
         <div className="space-x-8 text-sm font-medium text-gray-600">

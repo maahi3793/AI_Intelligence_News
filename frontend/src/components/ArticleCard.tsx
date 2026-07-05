@@ -20,6 +20,10 @@ export default function ArticleCard({ article, dateStr }: { article: any, dateSt
       gradientBanner = "from-purple-600 to-pink-600";
       audienceTag = "text-purple-700 bg-purple-50";
       break;
+    case 'artists':
+      gradientBanner = "from-fuchsia-600 to-rose-500";
+      audienceTag = "text-fuchsia-700 bg-fuchsia-50";
+      break;
   }
 
   return (
