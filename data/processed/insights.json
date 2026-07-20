@@ -1,73 +1,84 @@
 {
-  "date": "2026-07-18",
-  "total_input_articles": 6,
-  "total_after_filter": 6,
+  "date": "2026-07-19",
+  "total_input_articles": 11,
+  "total_after_filter": 5,
   "themes": [
     {
-      "name": "Model Releases & Capabilities",
-      "description": "China's Moonshot AI has released Kimi K3, a 2.8-trillion-parameter open-source model, positioning it as the largest globally and a rival to top U.S. systems.",
-      "why_it_matters": "This signifies the intensifying global competition in foundational AI models, particularly from China, and the continued trend towards larger, more powerful open-source architectures.",
-      "developments": [
-        "[Moonshot AI (China)]: Releases Kimi K3, a 2.8-trillion-parameter open-source model \u2192 establishes it as the largest open-source AI model, rivaling top U.S. systems."
-      ],
-      "confidence": "low",
-      "trend": "stable"
-    },
-    {
-      "name": "Evolving AI Infrastructure & Compute Economics",
-      "description": "The shift towards agentic AI is driving new infrastructure demands, exemplified by NVIDIA's co-design efforts with BlueField. Concurrently, enterprises are struggling to manage and measure the rapidly escalating costs of AI infrastructure.",
-      "why_it_matters": "Agentic AI requires specialized and scalable infrastructure, while the lack of cost visibility poses a significant challenge to enterprise AI adoption and ROI, indicating a growing 'compute gap.'",
-      "developments": [
-        "[NVIDIA BlueField]: Enables extreme co-design for scaling agentic AI factories \u2192 addresses the evolving infrastructure pattern for agentic AI.",
-        "[Enterprises]: Accelerating AI infrastructure spending faster than they can measure costs \u2192 highlights a significant 'compute gap' in economic visibility and control."
-      ],
-      "confidence": "medium",
-      "trend": "stable"
-    },
-    {
       "name": "Enterprise AI Agent Deployment & Evaluation",
-      "description": "Enterprises like Intuit are undergoing rapid, iterative development cycles for AI agent architectures, sometimes rebuilding them multiple times. OpenAI is also introducing new scorecards to measure the ROI, dependability, and cost efficiency of AI applications.",
-      "why_it_matters": "This indicates that the practical implementation of AI agents in enterprise environments is still an experimental and challenging process, requiring agile development and new, specific metrics to prove value and manage performance.",
+      "description": "Enterprises are actively developing and refining AI agent architectures, facing iterative challenges, and seeking standardized metrics to measure the ROI and performance of these deployments.",
+      "why_it_matters": "This highlights the practical difficulties and the evolving need for robust evaluation frameworks as AI agents move from pilot to production in enterprise settings.",
       "developments": [
-        "[Intuit]: Scrapped and rebuilt its AI agent architecture twice in four months \u2192 demonstrates the iterative and challenging path to successful enterprise AI agent deployment.",
-        "[OpenAI (Sarah Friar, CFO)]: Introduces a practical AI scorecard \u2192 provides new metrics for measuring AI ROI, dependability, and cost efficiency in enterprise applications."
+        "[OpenAI (Sarah Friar, CFO)]: Introduces a practical AI scorecard to measure ROI, cost per successful task, dependability, and return on compute \u2192 provides new metrics for evaluating AI application value in enterprises.",
+        "[Intuit]: Scrapped and rebuilt its AI agent architecture twice in four months \u2192 demonstrates the iterative and challenging path to successful enterprise AI agent deployment."
       ],
       "confidence": "medium",
       "trend": "stable"
     },
     {
-      "name": "Research in LLM Efficiency",
-      "description": "New research, specifically ExTernD, is proposing advanced techniques for post-training quantization (PTQ) of LLMs. This method aims to improve accuracy while significantly reducing model size through expanded-rank ternary decomposition.",
-      "why_it_matters": "As LLMs continue to grow in complexity and size, efficient quantization methods are crucial for reducing computational costs, enabling deployment on more constrained hardware, and making advanced AI more accessible and sustainable.",
+      "name": "AI Infrastructure & Compute Economics",
+      "description": "Focus on optimizing compute efficiency for post-training workloads, particularly for agentic AI, to maximize intelligence per dollar.",
+      "why_it_matters": "As AI models and agentic systems become more complex, cost-effective compute solutions are critical for scalability and economic viability.",
       "developments": [
-        "[Research (ExTernD)]: Proposes Expanded-Rank Ternary Decomposition for LLM PTQ \u2192 improves accuracy of ternary quantization for LLMs, enhancing efficiency."
+        "[NVIDIA (Vera Rubin)]: Focuses on maximizing intelligence per dollar for post-training workloads \u2192 optimizes cost efficiency for agentic AI compute."
       ],
       "confidence": "low",
       "trend": "stable"
+    },
+    {
+      "name": "Research & Breakthroughs (Single-Cell Analysis)",
+      "description": "Deep learning is being applied to single-cell RNA sequencing (scRNA-seq) analysis, with a survey covering 25 different methods across 6 subcategories.",
+      "why_it_matters": "This indicates a growing area of specialized AI research, leveraging deep learning to extract insights from complex biological data, potentially accelerating discoveries in genomics and medicine.",
+      "developments": [
+        "[Deep Learning Research]: Applied to single-cell RNA sequencing (scRNA-seq) analysis, covering 25 methods \u2192 advances the use of AI for complex biological data interpretation."
+      ],
+      "confidence": "low",
+      "trend": "emerging"
+    },
+    {
+      "name": "Regulation & Risk (EU AI Act Tools)",
+      "description": "A new open-source corpus (EU AI Act OpenRAG) has been released, providing legally structured chunks of the EU AI Act for RAG and legal-NLP experimentation.",
+      "why_it_matters": "This development facilitates the practical application of AI in understanding and complying with complex AI regulations, potentially leading to better governance tools and legal AI applications.",
+      "developments": [
+        "[EU AI Act OpenRAG]: Released as a downloadable corpus of legally structured chunks for RAG and legal-NLP experimentation \u2192 facilitates AI application in understanding and complying with AI regulations."
+      ],
+      "confidence": "low",
+      "trend": "emerging"
     }
   ],
   "top_insights": [
-    "The global race for advanced AI models, particularly large open-source ones, is intensifying, simultaneously driving demand for specialized infrastructure to support agentic AI and necessitating continuous research into model efficiency to manage escalating compute costs and deployment challenges.",
-    "Enterprises are navigating a complex and iterative path to deploy AI agents, requiring agile development, new metrics for measuring ROI and dependability, and a critical focus on understanding and controlling the rapidly accelerating costs of AI infrastructure.",
-    "The emergence of increasingly large and capable open-source models from global players like China underscores a growing tension between rapid innovation and the practical challenges enterprises face in managing the economic and infrastructural demands of deploying such advanced AI."
+    "Enterprise AI adoption is maturing but remains highly iterative and cost-sensitive, driving demand for robust evaluation frameworks and optimized compute solutions.",
+    "The practical implementation of AI regulation is fostering the development of specialized tools to bridge legal frameworks with AI applications, indicating a growing need for compliance-focused AI solutions.",
+    "AI research continues to diversify beyond foundational models, with significant advancements in specialized domains like bioinformatics, highlighting the broad applicability and impact of deep learning."
   ],
   "signal_vs_noise": {
     "strong_signal": [
       "A scorecard for the AI age",
-      "ExTernD: Expanded-Rank Ternary Decomposition Ternary LLM PTQ with Accuracy Approaching Any Quantization Level [P]",
       "Intuit scrapped its own AI agent architecture twice in four months. At VB Transform 2026, its AI VP called that the fast path",
-      "China\u2019s Moonshot AI releases Kimi K3, the largest open-source model ever, rivaling top U.S. systems",
-      "Scaling Agentic AI Factories Through Extreme Co-Design with NVIDIA BlueField"
+      "Deep learning tackles single-cell analysis \u2013 A survey of deep learning for scRNA-seq analysis [R]",
+      "EU AI Act OpenRAG: 933 legally structured chunks and BGE-M3 embeddings in one SQLite file [P]",
+      "NVIDIA Vera Rubin Maximizes Intelligence per Dollar for Post-Training Workloads \u2014 a Key Metric for Agentic AI"
     ],
     "weak_signal": [
-      "The AI compute gap: Enterprises are buying infrastructure faster than they can measure what it costs"
+      "AI Chatbot Responses Often Mirror Government Censorship, Report Finds",
+      "The cleanup trap: Stop asking RAG to fix bad data",
+      "Critical Resources taps cooling guru for AI data centre tech push",
+      "Body bags left outside OpenAI HQ, execs in fear as anti-AI movement grows",
+      "77% of Indian professionals use AI at work; AI-skilled workers earn more: Naukri report",
+      "TikTok is testing an AI likeness detection tool"
     ]
   },
   "temporal_analysis": {
-    "new_signals": [],
+    "new_signals": [
+      "Deep learning applications in single-cell analysis.",
+      "Tools facilitating RAG/legal-NLP experimentation with the EU AI Act."
+    ],
     "decayed_signals": [
       {
-        "topic": "AI Regulation & Data Ethics",
+        "topic": "Model Releases & Capabilities",
+        "status": "unconfirmed"
+      },
+      {
+        "topic": "Research in LLM Efficiency",
         "status": "unconfirmed"
       }
     ]
