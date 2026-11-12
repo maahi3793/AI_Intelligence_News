@@ -1,74 +1,100 @@
 {
-  "date": "2026-11-10",
-  "total_input_articles": 5,
-  "total_after_filter": 5,
+  "date": "2026-11-11",
+  "total_input_articles": 11,
+  "total_after_filter": 11,
   "themes": [
     {
-      "name": "Model Releases & Capabilities: New Efficient Models & Progress",
-      "description": "Meta AI has launched Muse Ember, a new small and efficient model designed for complex reasoning and agentic workloads. Concurrently, there's a report on Anthropic's AI progress accelerating, leading to an earlier expectation for intelligence explosion.",
-      "why_it_matters": "This indicates a continued focus on developing highly efficient, specialized foundational models for broader deployment and agentic applications, while also highlighting the rapid advancements in general AI capabilities and the ongoing debate around future AI milestones.",
+      "name": "Model Releases & Capabilities: New Foundational Models & Efficiency Focus",
+      "description": "Anthropic has released new Fable 5.2 and Mythos 5.2 AI models, noted for their advanced capabilities. Concurrently, Meta AI introduced Muse Ember, a smaller, more efficient model designed for complex reasoning and agentic workloads.",
+      "why_it_matters": "This indicates a dual trend in model development: pushing the boundaries of general AI capabilities with larger, more powerful models while also focusing on creating highly efficient, specialized models for broader deployment and agentic applications.",
       "developments": [
-        "[Meta AI]: launches Muse Ember, a small and efficient model for complex reasoning and agentic work \u2192 expands Meta's LLM portfolio with a focus on efficiency and specialized tasks.",
-        "[Anthropic]: AI progress doubles, leading to intelligence explosion expected in 2027 \u2192 indicates accelerated advancements in general AI capabilities."
+        "[Anthropic]: releases Fable 5.2 and Mythos 5.2 AI models, ranked highly for advanced capabilities \u2192 pushes the frontier of general AI performance.",
+        "[Meta AI]: introduces Muse Ember, a small, efficient model for complex reasoning and agentic work \u2192 expands Meta's LLM portfolio with a focus on efficiency and specialized tasks."
       ],
       "confidence": "medium",
       "trend": "growing"
     },
     {
-      "name": "AI Products & Features: Agentic AI & Privacy Enhancements",
-      "description": "OpenAI is rolling out business AI agents on ChatGPT to assist customers during shopping. Separately, Google AI has demonstrated the inability to read private WhatsApp and Signal chats, highlighting privacy capabilities.",
-      "why_it_matters": "The deployment of business AI agents signifies the expansion of AI into direct customer interaction and commerce, aiming to enhance user experience and operational efficiency. Google's demonstration reinforces the privacy and security aspects of AI applications, which is crucial for user trust and adoption.",
+      "name": "AI Business & Strategy: Scaling AI Adoption & Investment",
+      "description": "JioStar shares lessons on deploying AI at a 500M-user scale, focusing on evaluations and guardrails. Separately, NVIDIA announced new investments in Korean AI startups across various domains, and journalists are learning to integrate AI into newsrooms.",
+      "why_it_matters": "This highlights the increasing maturity of AI deployment in large-scale enterprises, the strategic importance of investing in AI ecosystems, and the practical challenges and efforts in integrating AI into traditional industries like media.",
       "developments": [
-        "[OpenAI]: rolls out business AI agents on ChatGPT for customer shopping assistance \u2192 expands AI's role in direct customer interaction and e-commerce.",
-        "[Google AI]: proves inability to read private WhatsApp and Signal chats \u2192 reinforces privacy and security capabilities of AI-powered communication."
+        "[JioStar]: shares lessons on AI discovery and production at 500M-user scale \u2192 provides insights into large-scale AI deployment challenges and best practices.",
+        "[NVIDIA]: announces new investments in Korean AI startups (foundation models, physical AI, infrastructure) \u2192 strengthens NVIDIA's strategic position in the global AI ecosystem and fosters innovation.",
+        "[Journalists]: learn to lead AI adoption in newsrooms \u2192 indicates growing efforts to integrate AI into traditional industries, facing adoption challenges."
       ],
       "confidence": "medium",
+      "trend": "growing"
+    },
+    {
+      "name": "AI Infrastructure & Hardware: Geopolitical Tensions & Investment",
+      "description": "A \"Nvidia spy scandal\" has reportedly caused panic among Chinese AI companies regarding access to advanced chips. This comes alongside NVIDIA's announced investments in Korean AI startups, including those focused on AI infrastructure.",
+      "why_it_matters": "This underscores the critical geopolitical sensitivities surrounding advanced AI chip technology and its impact on global supply chains and national AI development strategies. Simultaneously, it shows continued strategic investment in AI hardware and infrastructure development.",
+      "developments": [
+        "[Nvidia]: \"spy scandal\" sparks panic among Chinese AI companies over advanced chip access \u2192 highlights geopolitical tensions and supply chain vulnerabilities in AI hardware.",
+        "[NVIDIA]: invests in Korean AI startups, including those in AI infrastructure \u2192 reinforces strategic investment in global AI hardware and ecosystem development."
+      ],
+      "confidence": "low",
       "trend": "emerging"
     },
     {
-      "name": "Regulation & Risk: New AI Safety Oversight",
-      "description": "New York's AI safety law is taking effect, requiring major AI developers like OpenAI and Anthropic to register, disclose safety practices, and report critical incidents.",
-      "why_it_matters": "This represents a concrete step by a major jurisdiction to regulate the AI industry, imposing new compliance burdens on leading developers and setting a precedent for future AI governance frameworks, focusing on safety and transparency.",
+      "name": "Regulation & Risk: Expanding AI Safety Oversight & Social Impact",
+      "description": "New York's AI safety law is taking effect, imposing new oversight on major AI developers like OpenAI and Anthropic. Separately, a new paper argues that \"AI slop\" is a social judgment rather than an inherent content quality, impacting how AI-generated content is perceived and regulated.",
+      "why_it_matters": "This signifies a concrete move towards formal AI regulation in a major jurisdiction, increasing compliance burdens for leading AI firms. The discussion around \"AI slop\" highlights the evolving societal perception and challenges in defining and managing the risks associated with AI-generated content.",
       "developments": [
-        "[New York]: AI safety law takes effect, requiring registration, disclosure, and incident reporting from major AI developers (OpenAI, Anthropic) \u2192 increases regulatory oversight and compliance requirements for the AI industry."
+        "[New York]: AI safety law takes effect, requiring registration, disclosure, and incident reporting from major AI developers (OpenAI, Anthropic) \u2192 increases regulatory oversight and compliance requirements for the AI industry.",
+        "[Research]: paper argues \"AI slop\" is a social judgment, not content quality \u2192 shifts understanding of AI content risks towards societal perception and community standards."
+      ],
+      "confidence": "medium",
+      "trend": "growing"
+    },
+    {
+      "name": "Research & Breakthroughs: Advancements in Tactile AI for Robotics",
+      "description": "New research demonstrates that latent prediction outperforms reconstruction for tactile pretraining in dexterous manipulation tasks, with inference code and checkpoints made public.",
+      "why_it_matters": "This represents a significant methodological advancement in tactile AI for robotics, potentially leading to more robust and efficient robotic manipulation capabilities through improved sensor data processing.",
+      "developments": [
+        "[Robbyant Research]: latent prediction beats reconstruction for tactile pretraining on dexterous manipulation tasks \u2192 improves efficiency and robustness of tactile AI in robotics."
       ],
       "confidence": "low",
       "trend": "emerging"
     }
   ],
   "top_insights": [
-    "The AI model development landscape is bifurcating, with a continued focus on both highly efficient, specialized models for agentic applications and accelerated progress in general AI capabilities, intensifying the race for foundational model leadership.",
-    "Regulatory bodies are increasingly implementing concrete AI safety laws, shifting from conceptual discussions to enforceable requirements for major developers, indicating a maturing governance framework for the industry.",
-    "The application of AI is expanding into direct customer interaction through specialized agents, while simultaneously addressing critical user concerns around data privacy and security in communication platforms, balancing utility with trust."
+    "The AI model development landscape is characterized by a dual focus: pushing the boundaries of general intelligence with advanced foundational models while simultaneously optimizing for efficiency and specialized agentic applications, indicating a maturing market for diverse AI capabilities.",
+    "Geopolitical tensions surrounding advanced AI chip access are intensifying, creating supply chain vulnerabilities and impacting national AI strategies, even as strategic investments continue to flow into global AI infrastructure and startup ecosystems.",
+    "Regulatory frameworks for AI are rapidly formalizing, moving from conceptual discussions to enforceable laws that increase compliance burdens on major developers, while the societal perception of AI-generated content is evolving to include social judgment as a key risk factor.",
+    "Large-scale AI adoption is accelerating across diverse industries, requiring robust strategies for deployment, evaluation, and governance, and driving significant investment into the practical application and integration of AI technologies."
   ],
   "signal_vs_noise": {
     "strong_signal": [
+      "Anthropic Introduces New Fable 5.2 and Mythos 5.2 AI Models",
+      "JioStar\u2019s chief architect on AI discovery at 500M-user scale",
+      "llm-anthropic 0.31",
+      "AI \u2018slop\u2019 is a social judgement [R]",
+      "Latent prediction beats reconstruction for tactile pretraining on dexterous manipulation tasks[R]",
       "Introducing Our Smallest, Most Efficient Model: Muse Ember",
       "OpenAI, Anthropic face new oversight as New York\u2019s AI safety law takes effect",
-      "Intelligence explosion now expected in 2027 as Anthropic AI progress doubles",
-      "Google AI just proved nobody can read your private WhatsApp and Signal chats",
-      "OpenAI rolls out business AI agents on ChatGPT, to help customers during shopping"
+      "[News] What 33 journalists learned about leading AI adoption",
+      "NVIDIA Announces New Planned Investments in Korean Startups at the MSIT-NVIDIA AI Startup Partnership Forum",
+      "Nvidia spy scandal sparks panic among Chinese AI companies over access to advanced chips"
     ],
-    "weak_signal": []
+    "weak_signal": [
+      "llm 0.37.2"
+    ]
   },
   "temporal_analysis": {
     "new_signals": [
-      "New York's AI safety law taking effect, imposing new oversight on major AI developers.",
-      "OpenAI rolling out business AI agents on ChatGPT for customer shopping assistance.",
-      "Google AI demonstrating privacy capabilities for secure chat applications like WhatsApp and Signal.",
-      "Anthropic AI progress accelerating, leading to an earlier expectation for intelligence explosion."
+      "Anthropic's specific release of Fable 5.2 and Mythos 5.2 models.",
+      "JioStar's lessons on AI discovery and production at 500M-user scale.",
+      "NVIDIA's planned investments in Korean AI startups across various domains.",
+      "Research arguing that \"AI slop\" is a social judgment rather than an inherent content quality.",
+      "Reports of a \"Nvidia spy scandal\" causing panic among Chinese AI companies over advanced chip access.",
+      "New research on latent prediction for tactile pretraining in dexterous manipulation tasks.",
+      "Journalists learning about leading AI adoption in newsrooms."
     ],
     "decayed_signals": [
       {
-        "topic": "AI Infrastructure & Hardware: Competition in AI Chips",
-        "status": "unconfirmed"
-      },
-      {
-        "topic": "AI Business & Strategy: Strategic Investments in AI Ecosystems",
-        "status": "unconfirmed"
-      },
-      {
-        "topic": "Research & Breakthroughs: Advancements in Tactile AI for Robotics",
+        "topic": "AI Products & Features: Agentic AI & Privacy Enhancements",
         "status": "unconfirmed"
       }
     ]
