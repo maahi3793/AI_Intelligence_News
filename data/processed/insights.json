@@ -1,76 +1,93 @@
 {
-  "date": "2026-11-25",
-  "total_input_articles": 6,
-  "total_after_filter": 6,
+  "date": "2026-11-26",
+  "total_input_articles": 11,
+  "total_after_filter": 11,
   "themes": [
     {
-      "name": "AI Agent Performance & Safety",
-      "description": "Despite widespread adoption, even leading AI agents demonstrate significant struggles with reliability and safety in everyday tasks. Concurrently, AI developers like Anthropic are actively implementing measures to detect and prevent agent misbehavior.",
-      "why_it_matters": "This highlights a critical gap between public perception/adoption and the actual capabilities and safety maturity of current AI agents. It underscores the ongoing challenge of ensuring AI reliability and the proactive steps being taken by developers to mitigate risks, which is crucial for trust and broader deployment.",
+      "name": "AI Agent Development & Performance",
+      "description": "While new AI agent products and features are being released, a new benchmark highlights that even the most advanced AI agents struggle with reliability and safety in everyday tasks.",
+      "why_it_matters": "This indicates a significant gap between the ambition and practical, reliable deployment of AI agents, posing challenges for widespread adoption and trust.",
       "developments": [
-        "[New benchmark]: reveals even best AI agents struggle with everyday tasks reliably and safely \u2192 indicates a gap in practical AI agent capabilities and potential for new problems.",
-        "[Anthropic]: sets 'honey traps' to catch AI agents misbehaving \u2192 demonstrates proactive measures by developers to ensure AI safety and prevent misuse."
+        "[New benchmark]: reveals even the best AI agents struggle with everyday tasks reliably and safely \u2192 indicates a gap in practical AI agent capabilities and potential for new problems.",
+        "[Datasette Agent]: releases version 0.7a1 with improved iframe side panel navigation \u2192 enhances integration and functionality of a specific AI agent.",
+        "[NYT's News Agent]: launched as an internal AI tool for journalists \u2192 demonstrates practical application of specialized AI agents in newsrooms.",
+        "[Datasette Charts]: gains integration with Datasette Agent for chart generation \u2192 expands the capabilities of AI agents through plugin integration."
       ],
       "confidence": "medium",
       "trend": "growing"
     },
     {
-      "name": "AI Infrastructure & Sustainable Power",
-      "description": "The increasing power demands of next-generation AI data centers are driving investment interest in sustainable energy solutions like solar and batteries.",
-      "why_it_matters": "This signals a growing recognition of the environmental and logistical challenges posed by AI's energy consumption, pushing for more sustainable and resilient infrastructure development to support future AI growth.",
+      "name": "AI Infrastructure Challenges & Sustainable Solutions",
+      "description": "The construction of AI data centers is becoming increasingly difficult and expensive, leading to delays for \"neoclouds.\" Concurrently, investors are actively seeking sustainable energy solutions like solar and batteries to power these future data centers.",
+      "why_it_matters": "This highlights critical bottlenecks in scaling AI infrastructure, driven by both financial and environmental pressures, pushing for innovative and sustainable power strategies.",
       "developments": [
-        "[Crusoe investor]: bets on solar and batteries to power future AI data centers \u2192 indicates a strategic shift towards sustainable energy solutions for the massive power demands of AI infrastructure."
-      ],
-      "confidence": "low",
-      "trend": "emerging"
-    },
-    {
-      "name": "Data Privacy in AI Products",
-      "description": "A new startup, Maple, has secured funding for an encrypted AI architecture designed to protect user data, even from the company itself.",
-      "why_it_matters": "This development addresses growing concerns about data privacy and security in AI applications, offering a model for building trust and potentially setting new standards for data handling in AI products.",
-      "developments": [
-        "[Maple]: raises $5.3M for encrypted AI architecture \u2192 aims to prevent even the company from accessing users' private data, enhancing data privacy in AI products."
-      ],
-      "confidence": "low",
-      "trend": "emerging"
-    },
-    {
-      "name": "Scrutiny and Backlash over AI Use & Claims",
-      "description": "Public backlash is emerging over the suspected use of generative AI in creative works, such as David Fincher's latest film. This is compounded by continued scrutiny and backlash regarding past unsubstantiated claims of AI breakthroughs, exemplified by an Anthropic engineer facing criticism for a joke about an AI-solved Riemann problem.",
-      "why_it_matters": "This indicates increasing public and professional sensitivity to the ethical and authenticity implications of AI, particularly in creative industries and scientific research. It highlights the need for transparency and accountability in AI deployment and claims to maintain trust and avoid controversy.",
-      "developments": [
-        "[David Fincher]: faces backlash for suspected use of generative AI in film \u2192 highlights public concern and scrutiny over AI's role in creative industries.",
-        "[Anthropic engineer]: faces backlash for past AI Riemann problem claim \u2192 reinforces the need for rigorous validation and transparency in AI research claims."
+        "[AI data centers]: becoming harder and more expensive to build, causing delays for neoclouds \u2192 indicates significant challenges in scaling AI infrastructure.",
+        "[Crusoe investor]: bets on solar and batteries to power future AI data centers \u2192 signals strategic investment in sustainable energy for AI infrastructure."
       ],
       "confidence": "medium",
       "trend": "growing"
+    },
+    {
+      "name": "Model Advancements & Open Data Initiatives",
+      "description": "New AI models are being released, including Z.ai's GLM-5.4 with a novel looped transformer architecture. Concurrently, NVIDIA is emphasizing open data, fine-tuning, and faster inference for its Nemotron 3.5 Parse model.",
+      "why_it_matters": "These developments showcase ongoing innovation in AI model architectures and a focus on practical aspects like data accessibility, customization, and efficiency, which are crucial for broader adoption and specialized applications.",
+      "developments": [
+        "[Z.ai]: releases GLM-5.4 with a first-of-its-kind looped transformer architecture \u2192 represents an advancement in AI model architecture for generalized coding.",
+        "[NVIDIA]: focuses on open data, fine-tuning, and faster inference for Nemotron 3.5 Parse \u2192 highlights efforts to improve accessibility, customization, and performance of AI models."
+      ],
+      "confidence": "medium",
+      "trend": "emerging"
+    },
+    {
+      "name": "Data Privacy & Ethical Concerns in AI Adoption",
+      "description": "A startup, Maple, secured funding for an encrypted AI architecture designed to protect user data even from the company itself. Simultaneously, public scrutiny and backlash are emerging over the suspected use of generative AI in creative works, such as David Fincher's latest film.",
+      "why_it_matters": "These trends underscore the dual challenge of building trust in AI: by ensuring robust data privacy protections and by addressing ethical concerns and transparency regarding AI's role in creative and sensitive domains.",
+      "developments": [
+        "[Maple]: raises $5.3M for encrypted AI architecture \u2192 aims to prevent even the company from accessing users' private data, enhancing data privacy in AI products.",
+        "[David Fincher]: faces backlash for suspected use of generative AI in film \u2192 highlights public concern and scrutiny over AI's role in creative industries."
+      ],
+      "confidence": "medium",
+      "trend": "growing"
+    },
+    {
+      "name": "AI Industry Dynamics & Competition",
+      "description": "An ex-OpenAI researcher has sparked discussion by claiming Anthropic is \"hyperstitioning\" the AI race, drawing a reaction from Sam Altman.",
+      "why_it_matters": "This indicates ongoing competitive tension and strategic positioning within the leading AI companies, influencing public perception and investment narratives around the future of AI development.",
+      "developments": [
+        "[Ex-OpenAI researcher]: claims Anthropic is \"hyperstitioning\" the AI race, prompting Sam Altman's reaction \u2192 highlights competitive discourse and strategic narratives among leading AI firms."
+      ],
+      "confidence": "low",
+      "trend": "emerging"
     }
   ],
   "top_insights": [
-    "The rapid deployment of AI agents is revealing significant practical limitations and safety challenges, prompting developers to implement proactive measures to ensure reliability and prevent misuse.",
-    "Public and professional scrutiny of AI is intensifying, encompassing both the ethical implications of its use in creative fields and the veracity of claims regarding its capabilities, demanding greater transparency and accountability from AI developers and users.",
-    "The expansion of AI capabilities and applications is increasingly highlighting the need for responsible development, encompassing both the environmental impact of AI infrastructure and the imperative for robust data privacy solutions within AI products."
+    "The practical reliability of AI agents lags behind their rapid development and deployment, necessitating continued focus on robust benchmarks and safety measures to build user trust.",
+    "Scaling AI infrastructure faces increasing economic and environmental hurdles, driving investment towards sustainable energy solutions and highlighting the need for more efficient and resilient data center development.",
+    "As AI capabilities advance through new model architectures and open data initiatives, public and ethical scrutiny intensifies, demanding greater transparency in AI's application and robust solutions for data privacy."
   ],
   "signal_vs_noise": {
     "strong_signal": [
       "Even the best AI agents struggle with everyday life",
+      "datasette-agent 0.7a1",
       "Maple raises $5.3M to build AI products that protect your data, even from itself",
+      "Building on Nemotron 3.5 Parse: Open Data, Fine-Tuning, and Faster Inference",
+      "[Initiative] NYT's News Agent",
       "Why a Crusoe investor is betting on solar and batteries to power future AI data centers",
-      "David Fincher is being dragged for suspected use of AI in his latest film"
+      "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer",
+      "AI data centers are becoming harder to build, and neoclouds are feeling it",
+      "David Fincher is being dragged for suspected use of AI in his latest film",
+      "datasette-charts 0.2a0"
     ],
     "weak_signal": [
-      "Things are going to end badly for you: Anthropic engineer who claimed AI helped solve Riemann problem faces backlash",
-      "Jensen Huang effect: Anthropic sets honey traps to catch AI agents misbehaving"
+      "Ex-OpenAI researcher says Anthropic is hyperstitioning AI race, Sam Altman reacts"
     ]
   },
   "temporal_analysis": {
     "new_signals": [
-      "AI Infrastructure & Sustainable Power",
-      "Data Privacy in AI Products"
+      "Model Advancements & Open Data Initiatives",
+      "AI Industry Dynamics & Competition"
     ],
     "decayed_signals": [
-      "AI Products & Features: Enhanced Integration and Agentic Capabilities (unconfirmed)",
-      "Model Releases & Capabilities: Advancements in Coding-Oriented Architectures (unconfirmed)",
       "AI Business & Strategy: Expanding AI Adoption and Resource Allocation (unconfirmed)"
     ]
   }
